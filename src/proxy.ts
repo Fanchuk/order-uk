@@ -1,0 +1,26 @@
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
+
+export function proxy(request: NextRequest) {
+    const { pathname } = request.nextUrl
+
+    const requestHeaders = new Headers(request.headers)
+    requestHeaders.set('x-pathname', pathname)
+
+    if (pathname.startsWith('/admin/login')) {
+        return NextResponse.next({ request: { headers: requestHeaders } })
+    }
+
+    if (pathname.startsWith('/admin')) {
+        const session = request.cookies.get('admin_session')?.value
+        if (!session) {
+            return NextResponse.redirect(new URL('/admin/login', request.url))
+        }
+    }
+
+    return NextResponse.next({ request: { headers: requestHeaders } })
+}
+
+export const config = {
+    matcher: ['/admin/:path*'],
+}

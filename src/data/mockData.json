@@ -1,0 +1,607 @@
+{
+  "global_categories": [
+    {
+      "id": 1,
+      "name": "Burgers & Fast food",
+      "slug": "burgers-fast-food",
+      "imagePath": "/burgers.jpg",
+      "subcategories": [
+        { "id": 11, "name": "Classic Burgers", "slug": "classic-burgers" },
+        { "id": 12, "name": "Chicken Burgers", "slug": "chicken-burgers" },
+        { "id": 13, "name": "Vegan Burgers", "slug": "vegan-burgers" },
+        { "id": 14, "name": "Hot Dogs & Wraps", "slug": "hot-dogs-wraps" },
+        { "id": 15, "name": "Snacks & Sides", "slug": "snacks-sides" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Salads",
+      "slug": "salads",
+      "imagePath": "/salads.jpg",
+      "subcategories": [
+        { "id": 21, "name": "Caesar Salads", "slug": "caesar-salads" },
+        { "id": 22, "name": "Green Salads", "slug": "green-salads" },
+        { "id": 23, "name": "Warm Salads", "slug": "warm-salads" },
+        { "id": 24, "name": "Seafood Salads", "slug": "seafood-salads" },
+        { "id": 25, "name": "Vegan Salads", "slug": "vegan-salads" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pasta & Casuals",
+      "slug": "pasta-casuals",
+      "imagePath": "/pasta.jpg",
+      "subcategories": [
+        { "id": 31, "name": "Classic Pasta", "slug": "classic-pasta" },
+        { "id": 32, "name": "Cream Pasta", "slug": "cream-pasta" },
+        { "id": 33, "name": "Tomato Pasta", "slug": "tomato-pasta" },
+        { "id": 34, "name": "Stuffed Pasta", "slug": "stuffed-pasta" },
+        { "id": 35, "name": "Gnocchi & Dumplings", "slug": "gnocchi-dumplings" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pizza",
+      "slug": "pizza",
+      "imagePath": "/pizza.jpg",
+      "subcategories": [
+        { "id": 41, "name": "Classic Pizza", "slug": "classic-pizza" },
+        { "id": 42, "name": "Meat Pizza", "slug": "meat-pizza" },
+        { "id": 43, "name": "Vegetarian Pizza", "slug": "vegetarian-pizza" },
+        { "id": 44, "name": "Seafood Pizza", "slug": "seafood-pizza" },
+        { "id": 45, "name": "Spicy Pizza", "slug": "spicy-pizza" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Breakfast",
+      "slug": "breakfast",
+      "imagePath": "/breakfast.jpg",
+      "subcategories": [
+        { "id": 51, "name": "Eggs & Omelettes", "slug": "eggs-omelettes" },
+        { "id": 52, "name": "Pancakes & Waffles", "slug": "pancakes-waffles" },
+        { "id": 53, "name": "Porridge & Granola", "slug": "porridge-granola" },
+        { "id": 54, "name": "Toasts & Sandwiches", "slug": "toasts-sandwiches" },
+        { "id": 55, "name": "Breakfast Sets", "slug": "breakfast-sets" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Soups",
+      "slug": "soups",
+      "imagePath": "/soups.jpg",
+      "subcategories": [
+        { "id": 61, "name": "Cream Soups", "slug": "cream-soups" },
+        { "id": 62, "name": "Clear Soups", "slug": "clear-soups" },
+        { "id": 63, "name": "Spicy Soups", "slug": "spicy-soups" },
+        { "id": 64, "name": "Traditional Soups", "slug": "traditional-soups" },
+        { "id": 65, "name": "Asian Soups", "slug": "asian-soups" }
+      ]
+    }
+  ],
+  "restaurants": [
+    { "id": 1, "name": "McDonald's London", "logoPath": "/mcdonalds.png", "bannerImagePath": "/restaurant-bg.jpg", "rating": 4.8, "deliveryTimeMinutes": "20-30", "minimumOrder": 150 },
+    { "id": 2, "name": "Papa Johns", "logoPath": "/papa-johns.png", "bannerImagePath": "/restaurant-bg.jpg", "rating": 4.6, "deliveryTimeMinutes": "30-40", "minimumOrder": 200 },
+    { "id": 3, "name": "KFC West London", "logoPath": "/kfc.png", "bannerImagePath": "/restaurant-bg.jpg", "rating": 4.7, "deliveryTimeMinutes": "25-35", "minimumOrder": 180 },
+    { "id": 4, "name": "Texas Chicken", "logoPath": "/texas-chicken.png", "bannerImagePath": "/restaurant-bg.jpg", "rating": 4.5, "deliveryTimeMinutes": "30-45", "minimumOrder": 170 },
+    { "id": 5, "name": "Burger King", "logoPath": "/burger-king.png", "bannerImagePath": "/restaurant-bg.jpg", "rating": 4.6, "deliveryTimeMinutes": "20-35", "minimumOrder": 160 },
+    { "id": 6, "name": "Wendy's", "logoPath": "/shaurma.png", "bannerImagePath": "/restaurant-bg.jpg", "rating": 4.4, "deliveryTimeMinutes": "25-40", "minimumOrder": 190 }
+  ],
+  "promo_categories": [
+    { "id": 1, "name": "Vegan", "slug": "vegan" },
+    { "id": 2, "name": "Sushi", "slug": "sushi" },
+    { "id": 3, "name": "Pizza & Fast food", "slug": "pizza-fast-food" },
+    { "id": 4, "name": "Others", "slug": "others" }
+  ],
+  "global_products": [
+    { "id": 1, "name": "Classic Burger", "description": "Juicy beef patty, cheddar cheese, fresh vegetables, and signature sauce.", "price": 145, "imagePath": "/burger_base.jpg", "categoryId": 1, "spiciness": 0 },
+    { "id": 2, "name": "Cheeseburger Deluxe", "description": "Double cheese, bacon, and pickles in a brioche bun.", "price": 165, "imagePath": "/burger_double.jpg", "categoryId": 1, "spiciness": 0 },
+    { "id": 3, "name": "Spicy Chicken Burger", "description": "Crispy chicken fillet in spicy breading with hot sauce.", "price": 155, "imagePath": "/burger_chicken.jpg", "categoryId": 1, "spiciness": 4 },
+    { "id": 4, "name": "Double Bacon Burger", "description": "Two patties, crispy bacon, and melted cheese.", "price": 185, "imagePath": "/burger_double.jpg", "categoryId": 1, "spiciness": 1 },
+    { "id": 5, "name": "Vegan Burger", "description": "Chickpea and vegetable patty with fresh salad.", "price": 140, "imagePath": "/burger_vegan.jpg", "categoryId": 1, "spiciness": 1 },
+    { "id": 6, "name": "French Fries", "description": "Golden crispy fries with sea salt.", "price": 65, "imagePath": "/fries_classic.jpg", "categoryId": 1, "spiciness": 0 },
+    { "id": 7, "name": "Chicken Nuggets", "description": "Six pieces of tender chicken fillet in breading.", "price": 95, "imagePath": "/chicken_nuggets.jpg", "categoryId": 1, "spiciness": 0 },
+    { "id": 8, "name": "Classic Hot Dog", "description": "Juicy sausage, mustard, and ketchup in a soft bun.", "price": 85, "imagePath": "/hotdog_classic.jpg", "categoryId": 1, "spiciness": 1 },
+    { "id": 9, "name": "Onion Rings", "description": "Crispy onion rings in golden breading.", "price": 75, "imagePath": "/onion_rings.jpg", "categoryId": 1, "spiciness": 0 },
+    { "id": 10, "name": "Big Special Burger", "description": "Triple patty with three types of cheese and BBQ sauce.", "price": 210, "imagePath": "/burger_double.jpg", "categoryId": 1, "spiciness": 2 },
+    { "id": 11, "name": "Chicken Caesar", "description": "Romaine lettuce, grilled chicken fillet, parmesan, and Caesar dressing.", "price": 135, "imagePath": "/salad_caesar.jpg", "categoryId": 2, "spiciness": 0 },
+    { "id": 12, "name": "Greek Salad", "description": "Fresh vegetables, feta cheese, olives, and olive oil.", "price": 120, "imagePath": "/salad_fresh.jpg", "categoryId": 2, "spiciness": 0 },
+    { "id": 13, "name": "Tuna Salad", "description": "Salad mix, tuna, egg, and fresh vegetables.", "price": 145, "imagePath": "/salad_caesar.jpg", "categoryId": 2, "spiciness": 0 },
+    { "id": 14, "name": "Vegetable Mix", "description": "Fresh seasonal vegetables with light dressing.", "price": 95, "imagePath": "/salad_fresh.jpg", "categoryId": 2, "spiciness": 0 },
+    { "id": 15, "name": "Caprese", "description": "Mozzarella, tomatoes, and fresh basil with balsamic.", "price": 130, "imagePath": "/salad_fresh.jpg", "categoryId": 2, "spiciness": 0 },
+    { "id": 16, "name": "Shrimp Salad", "description": "Tiger prawns, avocado, and salad mix.", "price": 175, "imagePath": "/salad_caesar.jpg", "categoryId": 2, "spiciness": 1 },
+    { "id": 17, "name": "Warm Beef Salad", "description": "Beef slices, vegetables, and spicy sauce.", "price": 165, "imagePath": "/salad_fresh.jpg", "categoryId": 2, "spiciness": 2 },
+    { "id": 18, "name": "Quinoa Salad", "description": "Quinoa, avocado, chickpeas, and fresh greens.", "price": 140, "imagePath": "/salad_fresh.jpg", "categoryId": 2, "spiciness": 0 },
+    { "id": 19, "name": "Coleslaw", "description": "Fresh cabbage and carrots in creamy sauce.", "price": 70, "imagePath": "/salad_coleslaw.jpg", "categoryId": 2, "spiciness": 0 },
+    { "id": 20, "name": "Beet & Goat Cheese Salad", "description": "Baked beetroot, goat cheese, and nuts.", "price": 150, "imagePath": "/salad_fresh.jpg", "categoryId": 2, "spiciness": 0 },
+    { "id": 21, "name": "Spaghetti Bolognese", "description": "Classic pasta with meat sauce and parmesan.", "price": 155, "imagePath": "/pasta_tomato.jpg", "categoryId": 3, "spiciness": 1 },
+    { "id": 22, "name": "Pasta Carbonara", "description": "Spaghetti with bacon, egg, and cream sauce.", "price": 165, "imagePath": "/pasta_cream.jpg", "categoryId": 3, "spiciness": 0 },
+    { "id": 23, "name": "Penne Arrabbiata", "description": "Pasta in spicy tomato sauce with garlic.", "price": 140, "imagePath": "/pasta_tomato.jpg", "categoryId": 3, "spiciness": 4 },
+    { "id": 24, "name": "Fettuccine Alfredo", "description": "Pasta in delicate cream sauce with parmesan.", "price": 160, "imagePath": "/pasta_cream.jpg", "categoryId": 3, "spiciness": 0 },
+    { "id": 25, "name": "Lasagna", "description": "Pasta layers with meat sauce, béchamel, and cheese.", "price": 175, "imagePath": "/pasta_cream.jpg", "categoryId": 3, "spiciness": 1 },
+    { "id": 26, "name": "Seafood Pasta", "description": "Linguine with shrimp, mussels, and squid.", "price": 195, "imagePath": "/pasta_cream.jpg", "categoryId": 3, "spiciness": 1 },
+    { "id": 27, "name": "Pasta Pesto", "description": "Pasta with homemade pesto sauce and pine nuts.", "price": 150, "imagePath": "/pasta_cream.jpg", "categoryId": 3, "spiciness": 0 },
+    { "id": 28, "name": "Ricotta Ravioli", "description": "Tender ravioli filled with ricotta and spinach.", "price": 170, "imagePath": "/pasta_cream.jpg", "categoryId": 3, "spiciness": 0 },
+    { "id": 29, "name": "Mushroom Gnocchi", "description": "Potato gnocchi in creamy mushroom sauce.", "price": 160, "imagePath": "/pasta_cream.jpg", "categoryId": 3, "spiciness": 0 },
+    { "id": 30, "name": "Pasta Amatriciana", "description": "Pasta with guanciale, tomatoes, and pecorino cheese.", "price": 155, "imagePath": "/pasta_tomato.jpg", "categoryId": 3, "spiciness": 2 },
+    { "id": 31, "name": "Margherita Pizza", "description": "Tomato sauce, mozzarella, and fresh basil.", "price": 135, "imagePath": "/pizza_cheese.jpg", "categoryId": 4, "spiciness": 0 },
+    { "id": 32, "name": "Pepperoni Pizza", "description": "Spicy pepperoni sausage and double cheese.", "price": 165, "imagePath": "/pizza_meat.jpg", "categoryId": 4, "spiciness": 3 },
+    { "id": 33, "name": "Four Cheese Pizza", "description": "Mozzarella, gorgonzola, parmesan, and cheddar.", "price": 175, "imagePath": "/pizza_cheese.jpg", "categoryId": 4, "spiciness": 0 },
+    { "id": 34, "name": "Hawaiian Pizza", "description": "Ham, pineapple, and mozzarella cheese.", "price": 160, "imagePath": "/pizza_meat.jpg", "categoryId": 4, "spiciness": 0 },
+    { "id": 35, "name": "Meat Pizza", "description": "Bacon, ham, sausages, and chicken fillet.", "price": 195, "imagePath": "/pizza_meat.jpg", "categoryId": 4, "spiciness": 1 },
+    { "id": 36, "name": "Vegan Pizza", "description": "Fresh vegetables and vegan cheese on a thin crust.", "price": 150, "imagePath": "/pizza_cheese.jpg", "categoryId": 4, "spiciness": 0 },
+    { "id": 37, "name": "Diablo Pizza", "description": "Spicy salami, jalapeno peppers, and chili.", "price": 180, "imagePath": "/pizza_meat.jpg", "categoryId": 4, "spiciness": 5 },
+    { "id": 38, "name": "Mushroom Pizza", "description": "Champignons, mozzarella, and truffle oil.", "price": 155, "imagePath": "/pizza_cheese.jpg", "categoryId": 4, "spiciness": 0 },
+    { "id": 39, "name": "Seafood Pizza", "description": "Shrimp, mussels, squid, and greens.", "price": 210, "imagePath": "/pizza_cheese.jpg", "categoryId": 4, "spiciness": 1 },
+    { "id": 40, "name": "BBQ Pizza", "description": "Chicken, onions, and signature BBQ sauce.", "price": 185, "imagePath": "/pizza_meat.jpg", "categoryId": 4, "spiciness": 1 },
+    { "id": 41, "name": "English Breakfast", "description": "Fried eggs, bacon, sausages, beans, and toast.", "price": 145, "imagePath": "/breakfast_eggs.jpg", "categoryId": 5, "spiciness": 0 },
+    { "id": 42, "name": "Pancakes with Maple Syrup", "description": "Fluffy American pancakes with syrup and berries.", "price": 110, "imagePath": "/breakfast_pancakes.jpg", "categoryId": 5, "spiciness": 0 },
+    { "id": 43, "name": "Vegetable Omelet", "description": "Tender omelet with tomatoes, peppers, and greens.", "price": 95, "imagePath": "/breakfast_eggs.jpg", "categoryId": 5, "spiciness": 0 },
+    { "id": 44, "name": "Oatmeal", "description": "Creamy oatmeal with fruits and honey.", "price": 80, "imagePath": "/breakfast_oatmeal.jpg", "categoryId": 5, "spiciness": 0 },
+    { "id": 45, "name": "Cottage Cheese Pancakes", "description": "Homemade cottage cheese pancakes with raisins and sour cream.", "price": 105, "imagePath": "/breakfast_pancakes.jpg", "categoryId": 5, "spiciness": 0 },
+    { "id": 46, "name": "Avocado Toast", "description": "Crispy toast with avocado and a poached egg.", "price": 125, "imagePath": "/breakfast_eggs.jpg", "categoryId": 5, "spiciness": 0 },
+    { "id": 47, "name": "Granola with Yogurt", "description": "Crispy granola with natural yogurt and berries.", "price": 90, "imagePath": "/breakfast_oatmeal.jpg", "categoryId": 5, "spiciness": 0 },
+    { "id": 48, "name": "Eggs Benedict", "description": "Poached egg, ham, and hollandaise sauce on a muffin.", "price": 135, "imagePath": "/breakfast_eggs.jpg", "categoryId": 5, "spiciness": 0 },
+    { "id": 49, "name": "French Toast", "description": "Toast with cinnamon, berries, and powdered sugar.", "price": 100, "imagePath": "/breakfast_pancakes.jpg", "categoryId": 5, "spiciness": 0 },
+    { "id": 50, "name": "Breakfast Burrito", "description": "Tortilla with egg, bacon, cheese, and vegetables.", "price": 120, "imagePath": "/shawarma_wrap.jpg", "categoryId": 5, "spiciness": 2 },
+    { "id": 51, "name": "Ukrainian Borscht", "description": "Classic borscht with sour cream and garlic rolls.", "price": 95, "imagePath": "/soup_red.jpg", "categoryId": 6, "spiciness": 1 },
+    { "id": 52, "name": "Chicken Noodle Soup", "description": "Rich broth with chicken and homemade noodles.", "price": 85, "imagePath": "/soup_asian.jpg", "categoryId": 6, "spiciness": 0 },
+    { "id": 53, "name": "Mushroom Cream Soup", "description": "Tender cream soup made from porcini mushrooms and cream.", "price": 105, "imagePath": "/soup_cream.jpg", "categoryId": 6, "spiciness": 0 },
+    { "id": 54, "name": "Tom Yum", "description": "Spicy Thai soup with shrimp and lemongrass.", "price": 165, "imagePath": "/soup_asian.jpg", "categoryId": 6, "spiciness": 5 },
+    { "id": 55, "name": "Pumpkin Cream Soup", "description": "Velvety pumpkin soup with seeds.", "price": 100, "imagePath": "/soup_cream.jpg", "categoryId": 6, "spiciness": 0 },
+    { "id": 56, "name": "Meat Solyanka", "description": "Thick soup with smoked meats, olives, and lemon.", "price": 130, "imagePath": "/soup_red.jpg", "categoryId": 6, "spiciness": 2 },
+    { "id": 57, "name": "Cheese Soup", "description": "Creamy cheese soup with croutons.", "price": 110, "imagePath": "/soup_cream.jpg", "categoryId": 6, "spiciness": 0 },
+    { "id": 58, "name": "Minestrone", "description": "Italian vegetable soup with pasta and beans.", "price": 95, "imagePath": "/soup_cream.jpg", "categoryId": 6, "spiciness": 0 },
+    { "id": 59, "name": "Pea Soup", "description": "Hearty pea soup with smoked ribs.", "price": 90, "imagePath": "/soup_cream.jpg", "categoryId": 6, "spiciness": 0 },
+    { "id": 60, "name": "Ramen", "description": "Japanese noodle soup with egg and pork.", "price": 175, "imagePath": "/soup_asian.jpg", "categoryId": 6, "spiciness": 3 }
+  ],
+  "special_promos": [
+    { "id": 1, "name": "Vegan Bowl", "description": "Quinoa, chickpeas, avocado, and fresh vegetables.", "price": 130, "discountPercent": "-20%", "imagePath": "/promo_main_vegan_1.jpg", "promoCategoryId": 1 },
+    { "id": 2, "name": "Vegan Burger Set", "description": "Plant-based patty, fries, and a drink.", "price": 180, "discountPercent": "-15%", "imagePath": "/promo_main_vegan_2.jpg", "promoCategoryId": 1 },
+    { "id": 3, "name": "Tofu Stir-fry", "description": "Fried tofu with vegetables and rice.", "price": 145, "discountPercent": "-25%", "imagePath": "/promo_main_vegan_3.jpg", "promoCategoryId": 1 },
+    { "id": 4, "name": "Philadelphia Set", "description": "24 rolls with salmon and cream cheese.", "price": 320, "discountPercent": "-30%", "imagePath": "/promo_main_sushi_1.jpg", "promoCategoryId": 2 },
+    { "id": 5, "name": "California Roll Deal", "description": "Rolls with crab, avocado, and tobiko caviar.", "price": 165, "discountPercent": "-20%", "imagePath": "/promo_main_sushi_2.jpg", "promoCategoryId": 2 },
+    { "id": 6, "name": "Big Sushi Mix", "description": "Assortment of 16 different sushi and rolls.", "price": 280, "discountPercent": "-15%", "imagePath": "/promo_main_sushi_3.jpg", "promoCategoryId": 2 },
+    { "id": 7, "name": "Pizza of the Day", "description": "Large pepperoni pizza at a special price.", "price": 150, "discountPercent": "-35%", "imagePath": "/promo_main_fastfood_1.jpg", "promoCategoryId": 3 },
+    { "id": 8, "name": "Combo Burger Deal", "description": "Burger, fries, and a drink.", "price": 190, "discountPercent": "-20%", "imagePath": "/promo_main_fastfood_2.jpg", "promoCategoryId": 3 },
+    { "id": 9, "name": "Family Pizza Set", "description": "Two large pizzas and a 1.5L drink.", "price": 350, "discountPercent": "-25%", "imagePath": "/promo_main_fastfood_3.jpg", "promoCategoryId": 3 },
+    { "id": 10, "name": "Dessert Assortment", "description": "Set of three signature desserts.", "price": 120, "discountPercent": "-15%", "imagePath": "/promo_main_other_1.jpg", "promoCategoryId": 4 },
+    { "id": 11, "name": "Coffee Set", "description": "Two coffees of your choice and a croissant.", "price": 95, "discountPercent": "-20%", "imagePath": "/promo_main_other_2.jpg", "promoCategoryId": 4 },
+    { "id": 12, "name": "Snack Box", "description": "Nuggets, onion rings, and sauces.", "price": 135, "discountPercent": "-10%", "imagePath": "/promo_main_other_3.jpg", "promoCategoryId": 4 }
+  ],
+  "restaurant_menu_categories": [
+    { "id": 1, "name": "Offers", "slug": "offers" },
+    { "id": 2, "name": "Burgers", "slug": "burgers" },
+    { "id": 3, "name": "Fries", "slug": "fries" },
+    { "id": 4, "name": "Snacks", "slug": "snacks" },
+    { "id": 5, "name": "Salads", "slug": "salads" },
+    { "id": 6, "name": "Cold drinks", "slug": "cold-drinks" },
+    { "id": 7, "name": "Happy Meal®", "slug": "happy-meal" },
+    { "id": 8, "name": "Desserts", "slug": "desserts" },
+    { "id": 9, "name": "Hot drinks", "slug": "hot-drinks" },
+    { "id": 10, "name": "Sauces", "slug": "sauces" },
+    { "id": 11, "name": "Orbit®", "slug": "orbit" }
+  ],
+  "restaurant_menus": [
+    {
+      "restaurantId": 1,
+      "menus": [
+        { "categoryId": 1, "products": [
+          { "id": 1001, "name": "Big Mac Combo", "description": "Big Mac, fries, and a drink.", "price": 199, "imagePath": "/burger_double.jpg", "spiciness": 0 },
+          { "id": 1002, "name": "Family Box", "description": "Four burgers, fries, and nuggets.", "price": 499, "imagePath": "/burger_base.jpg", "spiciness": 0 },
+          { "id": 1003, "name": "Chicken Combo", "description": "Chicken burger, fries, and a drink.", "price": 179, "imagePath": "/burger_chicken.jpg", "spiciness": 2 }
+        ]},
+        { "categoryId": 2, "products": [
+          { "id": 1006, "name": "Big Mac", "description": "Two patties, special sauce, cheese, and vegetables.", "price": 135, "imagePath": "/burger_double.jpg", "spiciness": 0 },
+          { "id": 1007, "name": "Cheeseburger", "description": "Patty, cheddar cheese, and pickles.", "price": 65, "imagePath": "/burger_base.jpg", "spiciness": 0 },
+          { "id": 1008, "name": "Double Cheeseburger", "description": "Two patties and double cheese.", "price": 95, "imagePath": "/burger_double.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 3, "products": [
+          { "id": 1012, "name": "Small Fries", "description": "Crispy French fries.", "price": 45, "imagePath": "/fries_classic.jpg", "spiciness": 0 },
+          { "id": 1013, "name": "Large Fries", "description": "Large portion of French fries.", "price": 65, "imagePath": "/fries_classic.jpg", "spiciness": 0 },
+          { "id": 1014, "name": "Country Potatoes", "description": "Potato wedges with skin and spices.", "price": 70, "imagePath": "/country_potatoes.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 4, "products": [
+          { "id": 1017, "name": "Nuggets 6 pcs", "description": "Six pieces of chicken fillet.", "price": 89, "imagePath": "/chicken_nuggets.jpg", "spiciness": 0 },
+          { "id": 1018, "name": "Nuggets 9 pcs", "description": "Nine pieces of chicken fillet.", "price": 119, "imagePath": "/chicken_nuggets.jpg", "spiciness": 0 },
+          { "id": 1019, "name": "Chicken Strips", "description": "Crispy chicken strips.", "price": 99, "imagePath": "/chicken_nuggets.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 5, "products": [
+          { "id": 1022, "name": "Caesar Salad", "description": "Chicken, romaine, and parmesan.", "price": 110, "imagePath": "/salad_caesar.jpg", "spiciness": 0 },
+          { "id": 1023, "name": "Vegetable Salad", "description": "Fresh seasonal vegetables.", "price": 75, "imagePath": "/salad_fresh.jpg", "spiciness": 0 },
+          { "id": 1024, "name": "Chicken Salad", "description": "Grilled chicken fillet and salad mix.", "price": 105, "imagePath": "/salad_caesar.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 6, "products": [
+          { "id": 1027, "name": "Coca-Cola 0.5L", "description": "Refreshing drink.", "price": 40, "imagePath": "/drink_cola.jpg", "spiciness": 0 },
+          { "id": 1028, "name": "Sprite 0.5L", "description": "Lemon-lime drink.", "price": 40, "imagePath": "/drink_light.jpg", "spiciness": 0 },
+          { "id": 1029, "name": "Fanta 0.5L", "description": "Orange drink.", "price": 40, "imagePath": "/drink_light.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 7, "products": [
+          { "id": 1032, "name": "Happy Meal Nuggets", "description": "Nuggets, fries, drink, and toy.", "price": 135, "imagePath": "/chicken_nuggets.jpg", "spiciness": 0 },
+          { "id": 1033, "name": "Happy Meal Cheeseburger", "description": "Cheeseburger, fries, drink, and toy.", "price": 135, "imagePath": "/burger_base.jpg", "spiciness": 0 },
+          { "id": 1034, "name": "Happy Meal Hamburger", "description": "Hamburger, fries, drink, and toy.", "price": 129, "imagePath": "/burger_base.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 8, "products": [
+          { "id": 1037, "name": "Ice Cream Cone", "description": "Vanilla ice cream in a cone.", "price": 30, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 1038, "name": "McFlurry Oreo", "description": "Ice cream with Oreo cookies.", "price": 65, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 1039, "name": "Apple Pie", "description": "Crispy apple pie.", "price": 35, "imagePath": "/dessert_cake.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 9, "products": [
+          { "id": 1042, "name": "Cappuccino", "description": "Classic cappuccino.", "price": 55, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 1043, "name": "Latte", "description": "Coffee with milk.", "price": 60, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 1044, "name": "Espresso", "description": "Strong espresso coffee.", "price": 40, "imagePath": "/coffee_hot.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 10, "products": [
+          { "id": 1047, "name": "Ketchup", "description": "Tomato ketchup.", "price": 10, "imagePath": "/soup_cream.jpg", "spiciness": 0 },
+          { "id": 1048, "name": "BBQ Sauce", "description": "Sweet BBQ sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 },
+          { "id": 1049, "name": "Cheese Sauce", "description": "Creamy cheese sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 11, "products": [
+          { "id": 1052, "name": "Orbit Mint", "description": "Mint flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 1053, "name": "Orbit Strawberry", "description": "Strawberry flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 1054, "name": "Orbit Watermelon", "description": "Watermelon flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 }
+        ]}
+      ],
+      "restaurantPromos": [
+        { "id": 1101, "name": "Big Mac Combo", "description": "Big Mac, fries, and a drink at a great price.", "oldPrice": 249, "newPrice": 199, "discountLabel": "-20%", "imagePath": "/promo_mcd_1.jpg" },
+        { "id": 1102, "name": "Family Box", "description": "Burgers and snacks for the whole family.", "oldPrice": 599, "newPrice": 499, "discountLabel": "-17%", "imagePath": "/promo_mcd_2.jpg" },
+        { "id": 1103, "name": "Breakfast Deal", "description": "McMuffin and coffee at a special price.", "oldPrice": 159, "newPrice": 129, "discountLabel": "-19%", "imagePath": "/promo_mcd_3.jpg" },
+        { "id": 1104, "name": "McFlurry + Nuggets", "description": "McFlurry and 6 nuggets at a discount.", "oldPrice": 149, "newPrice": 119, "discountLabel": "-20%", "imagePath": "/promo_mcd_4.jpg" },
+        { "id": 1105, "name": "Double Cheeseburger Deal", "description": "Two double cheeseburgers at a special price.", "oldPrice": 179, "newPrice": 149, "discountLabel": "-17%", "imagePath": "/promo_mcd_5.jpg" },
+        { "id": 1106, "name": "Happy Meal Bundle", "description": "Two Happy Meals for the price of one and a half.", "oldPrice": 269, "newPrice": 219, "discountLabel": "-19%", "imagePath": "/promo_mcd_6.jpg" },
+        { "id": 1107, "name": "Morning Coffee Deal", "description": "Large latte and a muffin.", "oldPrice": 109, "newPrice": 85, "discountLabel": "-22%", "imagePath": "/promo_mcd_7.jpg" },
+        { "id": 1108, "name": "Chicken Strips Combo", "description": "Chicken strips, fries, and a drink.", "oldPrice": 219, "newPrice": 179, "discountLabel": "-18%", "imagePath": "/promo_mcd_8.jpg" }
+      ]
+    },
+    {
+      "restaurantId": 2,
+      "menus": [
+        { "categoryId": 1, "products": [
+          { "id": 2001, "name": "Two Pizzas Combo", "description": "Two large pizzas at a special price.", "price": 399, "imagePath": "/pizza_meat.jpg", "spiciness": 1 },
+          { "id": 2002, "name": "Pizza + Wings", "description": "Large pizza and chicken wings.", "price": 349, "imagePath": "/pizza_meat.jpg", "spiciness": 2 },
+          { "id": 2003, "name": "Student Set", "description": "Medium pizza and a drink.", "price": 199, "imagePath": "/pizza_meat.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 2, "products": [
+          { "id": 2006, "name": "Italian Burger", "description": "Patty, pesto, and mozzarella.", "price": 145, "imagePath": "/burger_base.jpg", "spiciness": 0 },
+          { "id": 2007, "name": "Chicken Burger", "description": "Chicken fillet and vegetables.", "price": 125, "imagePath": "/burger_chicken.jpg", "spiciness": 1 },
+          { "id": 2008, "name": "Bacon Burger", "description": "Patty with bacon and cheese.", "price": 155, "imagePath": "/burger_double.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 3, "products": [
+          { "id": 2011, "name": "French Fries", "description": "Classic French fries.", "price": 55, "imagePath": "/fries_classic.jpg", "spiciness": 0 },
+          { "id": 2012, "name": "Parmesan Fries", "description": "Fries with parmesan and greens.", "price": 75, "imagePath": "/country_potatoes.jpg", "spiciness": 0 },
+          { "id": 2013, "name": "Home Fries", "description": "Potato slices with spices.", "price": 70, "imagePath": "/country_potatoes.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 4, "products": [
+          { "id": 2016, "name": "Garlic Sticks", "description": "Dough sticks with garlic.", "price": 65, "imagePath": "/cheese_sticks.jpg", "spiciness": 0 },
+          { "id": 2017, "name": "Chicken Wings", "description": "Six wings in sauce.", "price": 110, "imagePath": "/chicken_nuggets.jpg", "spiciness": 3 },
+          { "id": 2018, "name": "Mozzarella Sticks", "description": "Breaded cheese sticks.", "price": 90, "imagePath": "/cheese_sticks.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 5, "products": [
+          { "id": 2021, "name": "Caesar Salad", "description": "Chicken, romaine, and parmesan.", "price": 115, "imagePath": "/salad_caesar.jpg", "spiciness": 0 },
+          { "id": 2022, "name": "Caprese", "description": "Mozzarella, tomatoes, and basil.", "price": 105, "imagePath": "/salad_fresh.jpg", "spiciness": 0 },
+          { "id": 2023, "name": "Greek Salad", "description": "Feta, olives, and vegetables.", "price": 95, "imagePath": "/salad_fresh.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 6, "products": [
+          { "id": 2026, "name": "Pepsi 0.5L", "description": "Refreshing drink.", "price": 40, "imagePath": "/drink_cola.jpg", "spiciness": 0 },
+          { "id": 2027, "name": "7UP 0.5L", "description": "Lemon-lime drink.", "price": 40, "imagePath": "/drink_light.jpg", "spiciness": 0 },
+          { "id": 2028, "name": "Mirinda 0.5L", "description": "Orange drink.", "price": 40, "imagePath": "/drink_light.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 7, "products": [
+          { "id": 2031, "name": "Kids Pizza Set", "description": "Mini pizza, juice, and dessert.", "price": 130, "imagePath": "/pizza_cheese.jpg", "spiciness": 0 },
+          { "id": 2032, "name": "Kids Nuggets Set", "description": "Nuggets, fries, and juice.", "price": 125, "imagePath": "/chicken_nuggets.jpg", "spiciness": 0 },
+          { "id": 2033, "name": "Kids Pasta Set", "description": "Pasta, juice, and dessert.", "price": 135, "imagePath": "/pasta_tomato.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 8, "products": [
+          { "id": 2036, "name": "Tiramisu", "description": "Classic Italian dessert.", "price": 75, "imagePath": "/dessert_cake.jpg", "spiciness": 0 },
+          { "id": 2037, "name": "Chocolate Brownie", "description": "Chocolate brownie with nuts.", "price": 65, "imagePath": "/dessert_cake.jpg", "spiciness": 0 },
+          { "id": 2038, "name": "Cheesecake", "description": "Delicate cheesecake with berries.", "price": 80, "imagePath": "/dessert_cake.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 9, "products": [
+          { "id": 2041, "name": "Espresso", "description": "Italian espresso.", "price": 45, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 2042, "name": "Cappuccino", "description": "Classic cappuccino.", "price": 55, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 2043, "name": "Latte", "description": "Coffee with milk.", "price": 60, "imagePath": "/coffee_hot.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 10, "products": [
+          { "id": 2046, "name": "Garlic Sauce", "description": "Creamy garlic sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 },
+          { "id": 2047, "name": "BBQ Sauce", "description": "Sweet BBQ sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 },
+          { "id": 2048, "name": "Cheese Sauce", "description": "Melted cheese sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 11, "products": [
+          { "id": 2051, "name": "Orbit Mint", "description": "Mint flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 2052, "name": "Orbit Strawberry", "description": "Strawberry flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 2053, "name": "Orbit Watermelon", "description": "Watermelon flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 }
+        ]}
+      ],
+      "restaurantPromos": [
+        { "id": 2101, "name": "Two Pizzas Deal", "description": "Two large pizzas of your choice.", "oldPrice": 499, "newPrice": 399, "discountLabel": "-20%", "imagePath": "/promo_papa_1.jpg" },
+        { "id": 2102, "name": "Pizza + Wings", "description": "Large pizza and wings at a discount.", "oldPrice": 429, "newPrice": 349, "discountLabel": "-19%", "imagePath": "/promo_papa_2.jpg" },
+        { "id": 2103, "name": "Student Lunch", "description": "Medium pizza and a drink.", "oldPrice": 249, "newPrice": 199, "discountLabel": "-20%", "imagePath": "/promo_papa_3.jpg" },
+        { "id": 2104, "name": "Mozzarella Sticks Deal", "description": "Mozzarella sticks and dipping sauce.", "oldPrice": 119, "newPrice": 95, "discountLabel": "-20%", "imagePath": "/promo_papa_4.jpg" },
+        { "id": 2105, "name": "BBQ Chicken Pizza", "description": "Large BBQ chicken pizza at a special price.", "oldPrice": 229, "newPrice": 185, "discountLabel": "-19%", "imagePath": "/promo_papa_5.jpg" },
+        { "id": 2106, "name": "Garlic Bread Bundle", "description": "Two garlic sticks and a dip.", "oldPrice": 99, "newPrice": 79, "discountLabel": "-20%", "imagePath": "/promo_papa_6.jpg" },
+        { "id": 2107, "name": "Tiramisu Set", "description": "Two tiramisus and two coffees.", "oldPrice": 249, "newPrice": 199, "discountLabel": "-20%", "imagePath": "/promo_papa_7.jpg" },
+        { "id": 2108, "name": "Family Feast", "description": "Three large pizzas and four drinks.", "oldPrice": 799, "newPrice": 649, "discountLabel": "-19%", "imagePath": "/promo_papa_8.jpg" }
+      ]
+    },
+    {
+      "restaurantId": 3,
+      "menus": [
+        { "categoryId": 1, "products": [
+          { "id": 3001, "name": "9-Piece Basket", "description": "Nine pieces of chicken.", "price": 349, "imagePath": "/chicken_nuggets.jpg", "spiciness": 2 },
+          { "id": 3002, "name": "Big Box", "description": "Burger, strips, fries, and a drink.", "price": 249, "imagePath": "/burger_double.jpg", "spiciness": 1 },
+          { "id": 3003, "name": "Twister Combo", "description": "Twister, fries, and a drink.", "price": 179, "imagePath": "/shawarma_wrap.jpg", "spiciness": 2 }
+        ]},
+        { "categoryId": 2, "products": [
+          { "id": 3006, "name": "Zinger Burger", "description": "Spicy chicken fillet and sauce.", "price": 125, "imagePath": "/burger_chicken.jpg", "spiciness": 4 },
+          { "id": 3007, "name": "Fish Burger", "description": "Fish fillet with tartar sauce.", "price": 110, "imagePath": "/burger_chicken.jpg", "spiciness": 0 },
+          { "id": 3008, "name": "Classic Burger", "description": "Chicken fillet and vegetables.", "price": 105, "imagePath": "/burger_base.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 3, "products": [
+          { "id": 3011, "name": "French Fries", "description": "Classic French fries.", "price": 50, "imagePath": "/fries_classic.jpg", "spiciness": 0 },
+          { "id": 3012, "name": "Country Potatoes", "description": "Potatoes with spices.", "price": 65, "imagePath": "/country_potatoes.jpg", "spiciness": 1 },
+          { "id": 3013, "name": "Spicy Fries", "description": "Spicy French fries.", "price": 60, "imagePath": "/fries_classic.jpg", "spiciness": 3 }
+        ]},
+        { "categoryId": 4, "products": [
+          { "id": 3016, "name": "3-Piece Strips", "description": "Crispy chicken strips.", "price": 95, "imagePath": "/chicken_nuggets.jpg", "spiciness": 2 },
+          { "id": 3017, "name": "6-Piece Hot Wings", "description": "Spicy chicken wings.", "price": 110, "imagePath": "/chicken_nuggets.jpg", "spiciness": 4 },
+          { "id": 3018, "name": "8-Piece Nuggets", "description": "Chicken nuggets.", "price": 105, "imagePath": "/chicken_nuggets.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 5, "products": [
+          { "id": 3021, "name": "Chicken Caesar", "description": "Chicken, romaine, and parmesan.", "price": 110, "imagePath": "/salad_caesar.jpg", "spiciness": 0 },
+          { "id": 3022, "name": "Coleslaw", "description": "Cabbage with carrots.", "price": 50, "imagePath": "/salad_coleslaw.jpg", "spiciness": 0 },
+          { "id": 3023, "name": "Vegetable Salad", "description": "Fresh vegetables.", "price": 70, "imagePath": "/salad_fresh.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 6, "products": [
+          { "id": 3026, "name": "Pepsi 0.5L", "description": "Refreshing drink.", "price": 40, "imagePath": "/drink_cola.jpg", "spiciness": 0 },
+          { "id": 3027, "name": "7UP 0.5L", "description": "Lemon-lime drink.", "price": 40, "imagePath": "/drink_light.jpg", "spiciness": 0 },
+          { "id": 3028, "name": "Ice Tea", "description": "Tea with lemon.", "price": 45, "imagePath": "/drink_light.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 7, "products": [
+          { "id": 3031, "name": "Kids Box Nuggets", "description": "Nuggets, fries, and juice.", "price": 130, "imagePath": "/chicken_nuggets.jpg", "spiciness": 0 },
+          { "id": 3032, "name": "Kids Box Strips", "description": "Strips, fries, and juice.", "price": 135, "imagePath": "/chicken_nuggets.jpg", "spiciness": 1 },
+          { "id": 3033, "name": "Kids Box Burger", "description": "Mini burger, fries, and juice.", "price": 125, "imagePath": "/burger_base.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 8, "products": [
+          { "id": 3036, "name": "Chocolate Sundae", "description": "Ice cream with chocolate sauce.", "price": 55, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 3037, "name": "Cheesecake", "description": "Delicate cheesecake.", "price": 70, "imagePath": "/dessert_cake.jpg", "spiciness": 0 },
+          { "id": 3038, "name": "Brownie", "description": "Chocolate brownie.", "price": 60, "imagePath": "/dessert_cake.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 9, "products": [
+          { "id": 3041, "name": "Americano Coffee", "description": "Classic americano.", "price": 45, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 3042, "name": "Cappuccino", "description": "Classic cappuccino.", "price": 55, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 3043, "name": "Latte", "description": "Coffee with milk.", "price": 60, "imagePath": "/coffee_hot.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 10, "products": [
+          { "id": 3046, "name": "Zinger Sauce", "description": "Signature spicy sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 4 },
+          { "id": 3047, "name": "BBQ Sauce", "description": "Sweet BBQ sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 },
+          { "id": 3048, "name": "Cheese Sauce", "description": "Creamy cheese sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 11, "products": [
+          { "id": 3051, "name": "Orbit Mint", "description": "Mint flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 3052, "name": "Orbit Strawberry", "description": "Strawberry flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 3053, "name": "Orbit Watermelon", "description": "Watermelon flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 }
+        ]}
+      ],
+      "restaurantPromos": [
+        { "id": 3101, "name": "Basket of the Day", "description": "Nine pieces of chicken at a discount.", "oldPrice": 429, "newPrice": 349, "discountLabel": "-19%", "imagePath": "/promo_kfc_1.jpg" },
+        { "id": 3102, "name": "Zinger Combo", "description": "Zinger, fries, and a drink.", "oldPrice": 219, "newPrice": 179, "discountLabel": "-18%", "imagePath": "/promo_kfc_2.jpg" },
+        { "id": 3103, "name": "Family Basket", "description": "Chicken and snacks for the family.", "oldPrice": 649, "newPrice": 549, "discountLabel": "-15%", "imagePath": "/promo_kfc_3.jpg" },
+        { "id": 3104, "name": "Hot Wings Deal", "description": "12 hot wings and a large drink.", "oldPrice": 219, "newPrice": 179, "discountLabel": "-18%", "imagePath": "/promo_kfc_4.jpg" },
+        { "id": 3105, "name": "Twister Meal", "description": "Twister wrap, fries, and a drink.", "oldPrice": 219, "newPrice": 179, "discountLabel": "-18%", "imagePath": "/promo_kfc_5.jpg" },
+        { "id": 3106, "name": "Strips Bucket", "description": "10 chicken strips at a great price.", "oldPrice": 349, "newPrice": 289, "discountLabel": "-17%", "imagePath": "/promo_kfc_6.jpg" },
+        { "id": 3107, "name": "Lunch Box", "description": "Burger, strips, and a drink.", "oldPrice": 299, "newPrice": 249, "discountLabel": "-17%", "imagePath": "/promo_kfc_7.jpg" },
+        { "id": 3108, "name": "Sundae + Nuggets", "description": "Sundae dessert and 8 nuggets.", "oldPrice": 169, "newPrice": 139, "discountLabel": "-18%", "imagePath": "/promo_kfc_8.jpg" }
+      ]
+    },
+    {
+      "restaurantId": 4,
+      "menus": [
+        { "categoryId": 1, "products": [
+          { "id": 4001, "name": "Texas Combo", "description": "Burger, fries, and a drink.", "price": 169, "imagePath": "/burger_chicken.jpg", "spiciness": 2 },
+          { "id": 4002, "name": "Chicken Basket", "description": "Eight pieces of chicken.", "price": 329, "imagePath": "/chicken_nuggets.jpg", "spiciness": 2 },
+          { "id": 4003, "name": "Family Box", "description": "Chicken, tenders, and biscuits.", "price": 519, "imagePath": "/chicken_nuggets.jpg", "spiciness": 2 }
+        ]},
+        { "categoryId": 2, "products": [
+          { "id": 4006, "name": "Texas Burger", "description": "Chicken fillet and signature sauce.", "price": 135, "imagePath": "/burger_chicken.jpg", "spiciness": 3 },
+          { "id": 4007, "name": "Spicy Burger", "description": "Spicy chicken fillet.", "price": 145, "imagePath": "/burger_chicken.jpg", "spiciness": 5 },
+          { "id": 4008, "name": "Classic Burger", "description": "Chicken fillet and vegetables.", "price": 115, "imagePath": "/burger_base.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 3, "products": [
+          { "id": 4011, "name": "French Fries", "description": "Classic French fries.", "price": 50, "imagePath": "/fries_classic.jpg", "spiciness": 0 },
+          { "id": 4012, "name": "Cajun Fries", "description": "Potatoes with cajun spices.", "price": 65, "imagePath": "/country_potatoes.jpg", "spiciness": 3 },
+          { "id": 4013, "name": "Cheese Fries", "description": "Potatoes with cheese sauce.", "price": 75, "imagePath": "/fries_classic.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 4, "products": [
+          { "id": 4016, "name": "3-Piece Tenders", "description": "Crispy chicken tenders.", "price": 95, "imagePath": "/chicken_nuggets.jpg", "spiciness": 2 },
+          { "id": 4017, "name": "2 Biscuits", "description": "Soft American biscuits.", "price": 60, "imagePath": "/breakfast_pancakes.jpg", "spiciness": 0 },
+          { "id": 4018, "name": "8-Piece Nuggets", "description": "Chicken nuggets.", "price": 100, "imagePath": "/chicken_nuggets.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 5, "products": [
+          { "id": 4021, "name": "Chicken Caesar", "description": "Chicken, romaine, and parmesan.", "price": 110, "imagePath": "/salad_caesar.jpg", "spiciness": 0 },
+          { "id": 4022, "name": "Coleslaw", "description": "Cabbage with carrots.", "price": 50, "imagePath": "/salad_coleslaw.jpg", "spiciness": 0 },
+          { "id": 4023, "name": "Vegetable Salad", "description": "Fresh vegetables.", "price": 70, "imagePath": "/salad_fresh.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 6, "products": [
+          { "id": 4026, "name": "Coca-Cola 0.5L", "description": "Refreshing drink.", "price": 40, "imagePath": "/drink_cola.jpg", "spiciness": 0 },
+          { "id": 4027, "name": "Sprite 0.5L", "description": "Lemon-lime drink.", "price": 40, "imagePath": "/drink_light.jpg", "spiciness": 0 },
+          { "id": 4028, "name": "Ice Tea", "description": "Tea with lemon.", "price": 45, "imagePath": "/drink_light.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 7, "products": [
+          { "id": 4031, "name": "Kids Box Nuggets", "description": "Nuggets, fries, and juice.", "price": 125, "imagePath": "/chicken_nuggets.jpg", "spiciness": 0 },
+          { "id": 4032, "name": "Kids Box Tenders", "description": "Tenders, fries, and juice.", "price": 130, "imagePath": "/chicken_nuggets.jpg", "spiciness": 1 },
+          { "id": 4033, "name": "Kids Box Burger", "description": "Mini burger, fries, and juice.", "price": 120, "imagePath": "/burger_base.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 8, "products": [
+          { "id": 4036, "name": "Apple Pie", "description": "Crispy apple pie.", "price": 50, "imagePath": "/dessert_cake.jpg", "spiciness": 0 },
+          { "id": 4037, "name": "Cheesecake", "description": "Delicate cheesecake.", "price": 70, "imagePath": "/dessert_cake.jpg", "spiciness": 0 },
+          { "id": 4038, "name": "Brownie", "description": "Chocolate brownie.", "price": 60, "imagePath": "/dessert_cake.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 9, "products": [
+          { "id": 4041, "name": "Americano Coffee", "description": "Classic americano.", "price": 45, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 4042, "name": "Cappuccino", "description": "Classic cappuccino.", "price": 55, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 4043, "name": "Latte", "description": "Coffee with milk.", "price": 60, "imagePath": "/coffee_hot.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 10, "products": [
+          { "id": 4046, "name": "Texas Sauce", "description": "Signature spicy sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 3 },
+          { "id": 4047, "name": "BBQ Sauce", "description": "Sweet BBQ sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 },
+          { "id": 4048, "name": "Ranch Sauce", "description": "Classic ranch sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 11, "products": [
+          { "id": 4051, "name": "Orbit Mint", "description": "Mint flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 4052, "name": "Orbit Strawberry", "description": "Strawberry flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 4053, "name": "Orbit Watermelon", "description": "Watermelon flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 }
+        ]}
+      ],
+      "restaurantPromos": [
+        { "id": 4101, "name": "Texas Combo", "description": "Burger, fries, and a drink at a discount.", "oldPrice": 209, "newPrice": 169, "discountLabel": "-19%", "imagePath": "/promo_texas_1.jpg" },
+        { "id": 4102, "name": "Chicken Basket", "description": "Eight pieces of chicken.", "oldPrice": 399, "newPrice": 329, "discountLabel": "-18%", "imagePath": "/promo_texas_2.jpg" },
+        { "id": 4103, "name": "Family Box", "description": "Chicken and snacks for the family.", "oldPrice": 619, "newPrice": 519, "discountLabel": "-16%", "imagePath": "/promo_texas_3.jpg" },
+        { "id": 4104, "name": "Spicy Burger Deal", "description": "Spicy burger and cajun fries.", "oldPrice": 199, "newPrice": 165, "discountLabel": "-17%", "imagePath": "/promo_texas_4.jpg" },
+        { "id": 4105, "name": "Tenders Meal", "description": "5 tenders, fries, and a drink.", "oldPrice": 239, "newPrice": 195, "discountLabel": "-18%", "imagePath": "/promo_texas_5.jpg" },
+        { "id": 4106, "name": "Biscuit Bundle", "description": "4 biscuits and a drink.", "oldPrice": 149, "newPrice": 119, "discountLabel": "-20%", "imagePath": "/promo_texas_6.jpg" },
+        { "id": 4107, "name": "Cajun Fries XL", "description": "XL cajun fries and a dipping sauce.", "oldPrice": 99, "newPrice": 79, "discountLabel": "-20%", "imagePath": "/promo_texas_7.jpg" },
+        { "id": 4108, "name": "Weekend Special", "description": "Two Texas burgers and two drinks.", "oldPrice": 369, "newPrice": 299, "discountLabel": "-19%", "imagePath": "/promo_texas_8.jpg" }
+      ]
+    },
+    {
+      "restaurantId": 5,
+      "menus": [
+        { "categoryId": 1, "products": [
+          { "id": 5001, "name": "Whopper Combo", "description": "Whopper, fries, and a drink.", "price": 199, "imagePath": "/burger_double.jpg", "spiciness": 1 },
+          { "id": 5002, "name": "King Box", "description": "Two burgers, fries, and nuggets.", "price": 349, "imagePath": "/burger_double.jpg", "spiciness": 1 },
+          { "id": 5003, "name": "Chicken Combo", "description": "Chicken burger, fries, and a drink.", "price": 179, "imagePath": "/burger_chicken.jpg", "spiciness": 2 }
+        ]},
+        { "categoryId": 2, "products": [
+          { "id": 5006, "name": "Whopper", "description": "Large grilled beef patty and vegetables.", "price": 145, "imagePath": "/burger_double.jpg", "spiciness": 1 },
+          { "id": 5007, "name": "Double Whopper", "description": "Two grilled patties and cheese.", "price": 195, "imagePath": "/burger_double.jpg", "spiciness": 1 },
+          { "id": 5008, "name": "Cheeseburger", "description": "Patty with cheddar cheese.", "price": 75, "imagePath": "/burger_base.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 3, "products": [
+          { "id": 5011, "name": "French Fries", "description": "Classic French fries.", "price": 50, "imagePath": "/fries_classic.jpg", "spiciness": 0 },
+          { "id": 5012, "name": "Large French Fries", "description": "Large portion of fries.", "price": 70, "imagePath": "/fries_classic.jpg", "spiciness": 0 },
+          { "id": 5013, "name": "Cheese Fries", "description": "Potatoes with cheese sauce.", "price": 75, "imagePath": "/fries_classic.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 4, "products": [
+          { "id": 5016, "name": "Nuggets 6 pcs", "description": "Chicken nuggets.", "price": 89, "imagePath": "/chicken_nuggets.jpg", "spiciness": 0 },
+          { "id": 5017, "name": "Chicken Strips", "description": "Crispy chicken strips.", "price": 99, "imagePath": "/chicken_nuggets.jpg", "spiciness": 1 },
+          { "id": 5018, "name": "Chili Cheese Bites", "description": "Cheese balls with chili.", "price": 85, "imagePath": "/cheese_sticks.jpg", "spiciness": 3 }
+        ]},
+        { "categoryId": 5, "products": [
+          { "id": 5021, "name": "Chicken Caesar", "description": "Chicken, romaine, and parmesan.", "price": 110, "imagePath": "/salad_caesar.jpg", "spiciness": 0 },
+          { "id": 5022, "name": "Vegetable Salad", "description": "Fresh vegetables.", "price": 70, "imagePath": "/salad_fresh.jpg", "spiciness": 0 },
+          { "id": 5023, "name": "Chicken Salad", "description": "Chicken fillet and greens.", "price": 100, "imagePath": "/salad_fresh.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 6, "products": [
+          { "id": 5026, "name": "Coca-Cola 0.5L", "description": "Refreshing drink.", "price": 40, "imagePath": "/drink_cola.jpg", "spiciness": 0 },
+          { "id": 5027, "name": "Fanta 0.5L", "description": "Orange drink.", "price": 40, "imagePath": "/drink_light.jpg", "spiciness": 0 },
+          { "id": 5028, "name": "Sprite 0.5L", "description": "Lemon-lime drink.", "price": 40, "imagePath": "/drink_light.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 7, "products": [
+          { "id": 5031, "name": "King Junior Nuggets", "description": "Nuggets, fries, and juice.", "price": 130, "imagePath": "/chicken_nuggets.jpg", "spiciness": 0 },
+          { "id": 5032, "name": "King Junior Cheeseburger", "description": "Cheeseburger, fries, and juice.", "price": 130, "imagePath": "/burger_base.jpg", "spiciness": 0 },
+          { "id": 5033, "name": "King Junior Strips", "description": "Strips, fries, and juice.", "price": 135, "imagePath": "/chicken_nuggets.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 8, "products": [
+          { "id": 5036, "name": "Chocolate Sundae", "description": "Ice cream with chocolate sauce.", "price": 55, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 5037, "name": "Cheesecake", "description": "Delicate cheesecake.", "price": 70, "imagePath": "/dessert_cake.jpg", "spiciness": 0 },
+          { "id": 5038, "name": "Brownie", "description": "Chocolate brownie.", "price": 60, "imagePath": "/dessert_cake.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 9, "products": [
+          { "id": 5041, "name": "Americano Coffee", "description": "Classic americano.", "price": 45, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 5042, "name": "Cappuccino", "description": "Classic cappuccino.", "price": 55, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 5043, "name": "Latte", "description": "Coffee with milk.", "price": 60, "imagePath": "/coffee_hot.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 10, "products": [
+          { "id": 5046, "name": "Ketchup", "description": "Tomato ketchup.", "price": 10, "imagePath": "/soup_cream.jpg", "spiciness": 0 },
+          { "id": 5047, "name": "BBQ Sauce", "description": "Sweet BBQ sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 },
+          { "id": 5048, "name": "Cheese Sauce", "description": "Creamy cheese sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 11, "products": [
+          { "id": 5051, "name": "Orbit Mint", "description": "Mint flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 5052, "name": "Orbit Strawberry", "description": "Strawberry flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 5053, "name": "Orbit Watermelon", "description": "Watermelon flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 }
+        ]}
+      ],
+      "restaurantPromos": [
+        { "id": 5101, "name": "Whopper Combo", "description": "Whopper, fries, and a drink at a discount.", "oldPrice": 249, "newPrice": 199, "discountLabel": "-20%", "imagePath": "/promo_bk_1.jpg" },
+        { "id": 5102, "name": "King Box", "description": "Two burgers and snacks.", "oldPrice": 429, "newPrice": 349, "discountLabel": "-19%", "imagePath": "/promo_bk_2.jpg" },
+        { "id": 5103, "name": "Double Whopper Set", "description": "Double whopper, fries, and a drink.", "oldPrice": 299, "newPrice": 239, "discountLabel": "-20%", "imagePath": "/promo_bk_3.jpg" },
+        { "id": 5104, "name": "Chili Cheese Deal", "description": "Chili cheese bites and a drink.", "oldPrice": 129, "newPrice": 105, "discountLabel": "-19%", "imagePath": "/promo_bk_4.jpg" },
+        { "id": 5105, "name": "BK Nuggets Bucket", "description": "20 nuggets and two drinks.", "oldPrice": 299, "newPrice": 249, "discountLabel": "-17%", "imagePath": "/promo_bk_5.jpg" },
+        { "id": 5106, "name": "Cheese Fries Combo", "description": "Cheese fries and a drink.", "oldPrice": 119, "newPrice": 95, "discountLabel": "-20%", "imagePath": "/promo_bk_6.jpg" },
+        { "id": 5107, "name": "Family King Box", "description": "Four burgers, two fries, and four drinks.", "oldPrice": 849, "newPrice": 699, "discountLabel": "-18%", "imagePath": "/promo_bk_7.jpg" },
+        { "id": 5108, "name": "Brownie + Sundae", "description": "Brownie and sundae at a special price.", "oldPrice": 129, "newPrice": 105, "discountLabel": "-19%", "imagePath": "/promo_bk_8.jpg" }
+      ]
+    },
+    {
+      "restaurantId": 6,
+      "menus": [
+        { "categoryId": 1, "products": [
+          { "id": 6001, "name": "Baconator Combo", "description": "Baconator, fries, and a drink.", "price": 209, "imagePath": "/burger_double.jpg", "spiciness": 1 },
+          { "id": 6002, "name": "Dave Single Combo", "description": "Dave's burger, fries, and a drink.", "price": 189, "imagePath": "/burger_base.jpg", "spiciness": 0 },
+          { "id": 6003, "name": "Chicken Combo", "description": "Chicken burger, fries, and a drink.", "price": 179, "imagePath": "/burger_chicken.jpg", "spiciness": 2 }
+        ]},
+        { "categoryId": 2, "products": [
+          { "id": 6006, "name": "Dave Single", "description": "Fresh beef patty and vegetables.", "price": 135, "imagePath": "/burger_base.jpg", "spiciness": 0 },
+          { "id": 6007, "name": "Baconator", "description": "Two patties, bacon, and cheese.", "price": 185, "imagePath": "/burger_double.jpg", "spiciness": 1 },
+          { "id": 6008, "name": "Cheeseburger", "description": "Patty with cheddar cheese.", "price": 75, "imagePath": "/burger_base.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 3, "products": [
+          { "id": 6011, "name": "French Fries", "description": "Classic French fries.", "price": 50, "imagePath": "/fries_classic.jpg", "spiciness": 0 },
+          { "id": 6012, "name": "Sea Salt Fries", "description": "Potatoes with sea salt.", "price": 60, "imagePath": "/fries_classic.jpg", "spiciness": 0 },
+          { "id": 6013, "name": "Bacon Cheese Fries", "description": "Potatoes with cheese and bacon.", "price": 85, "imagePath": "/fries_classic.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 4, "products": [
+          { "id": 6016, "name": "Nuggets 6 pcs", "description": "Chicken nuggets.", "price": 89, "imagePath": "/chicken_nuggets.jpg", "spiciness": 0 },
+          { "id": 6017, "name": "Spicy Nuggets", "description": "Spicy chicken nuggets.", "price": 95, "imagePath": "/chicken_nuggets.jpg", "spiciness": 3 },
+          { "id": 6018, "name": "Chicken Strips", "description": "Crispy chicken strips.", "price": 99, "imagePath": "/chicken_nuggets.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 5, "products": [
+          { "id": 6021, "name": "Chicken Caesar", "description": "Chicken, romaine, and parmesan.", "price": 110, "imagePath": "/salad_caesar.jpg", "spiciness": 0 },
+          { "id": 6022, "name": "Grilled Chicken Salad", "description": "Grilled chicken fillet and vegetables.", "price": 115, "imagePath": "/salad_fresh.jpg", "spiciness": 0 },
+          { "id": 6023, "name": "Vegetable Salad", "description": "Fresh vegetables.", "price": 70, "imagePath": "/salad_fresh.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 6, "products": [
+          { "id": 6026, "name": "Coca-Cola 0.5L", "description": "Refreshing drink.", "price": 40, "imagePath": "/drink_cola.jpg", "spiciness": 0 },
+          { "id": 6027, "name": "Sprite 0.5L", "description": "Lemon-lime drink.", "price": 40, "imagePath": "/drink_light.jpg", "spiciness": 0 },
+          { "id": 6028, "name": "Chocolate Frosty", "description": "Signature dairy dessert drink.", "price": 60, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 7, "products": [
+          { "id": 6031, "name": "Kids Set Nuggets", "description": "Nuggets, fries, and juice.", "price": 125, "imagePath": "/chicken_nuggets.jpg", "spiciness": 0 },
+          { "id": 6032, "name": "Kids Set Cheeseburger", "description": "Cheeseburger, fries, and juice.", "price": 125, "imagePath": "/burger_base.jpg", "spiciness": 0 },
+          { "id": 6033, "name": "Kids Set Strips", "description": "Strips, fries, and juice.", "price": 130, "imagePath": "/chicken_nuggets.jpg", "spiciness": 1 }
+        ]},
+        { "categoryId": 8, "products": [
+          { "id": 6036, "name": "Vanilla Frosty", "description": "Vanilla Frosty dessert.", "price": 55, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 6037, "name": "Cheesecake", "description": "Delicate cheesecake.", "price": 70, "imagePath": "/dessert_cake.jpg", "spiciness": 0 },
+          { "id": 6038, "name": "Brownie", "description": "Chocolate brownie.", "price": 60, "imagePath": "/dessert_cake.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 9, "products": [
+          { "id": 6041, "name": "Americano Coffee", "description": "Classic americano.", "price": 45, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 6042, "name": "Cappuccino", "description": "Classic cappuccino.", "price": 55, "imagePath": "/coffee_hot.jpg", "spiciness": 0 },
+          { "id": 6043, "name": "Latte", "description": "Coffee with milk.", "price": 60, "imagePath": "/coffee_hot.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 10, "products": [
+          { "id": 6046, "name": "Ketchup", "description": "Tomato ketchup.", "price": 10, "imagePath": "/soup_cream.jpg", "spiciness": 0 },
+          { "id": 6047, "name": "BBQ Sauce", "description": "Sweet BBQ sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 },
+          { "id": 6048, "name": "Cheese Sauce", "description": "Creamy cheese sauce.", "price": 15, "imagePath": "/soup_cream.jpg", "spiciness": 0 }
+        ]},
+        { "categoryId": 11, "products": [
+          { "id": 6051, "name": "Orbit Mint", "description": "Mint flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 6052, "name": "Orbit Strawberry", "description": "Strawberry flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 },
+          { "id": 6053, "name": "Orbit Watermelon", "description": "Watermelon flavored chewing gum.", "price": 25, "imagePath": "/dessert_icecream.jpg", "spiciness": 0 }
+        ]}
+      ],
+      "restaurantPromos": [
+        { "id": 6101, "name": "Baconator Combo", "description": "Baconator, fries, and a drink at a discount.", "oldPrice": 259, "newPrice": 209, "discountLabel": "-19%", "imagePath": "/promo_wendys_1.jpg" },
+        { "id": 6102, "name": "Dave Single Set", "description": "Dave's burger, fries, and a drink.", "oldPrice": 229, "newPrice": 189, "discountLabel": "-17%", "imagePath": "/promo_wendys_2.jpg" },
+        { "id": 6103, "name": "Family Box", "description": "Burgers and snacks for the family.", "oldPrice": 619, "newPrice": 519, "discountLabel": "-16%", "imagePath": "/promo_wendys_3.jpg" },
+        { "id": 6104, "name": "Vanilla Frosty Deal", "description": "Two Frosties at a special price.", "oldPrice": 119, "newPrice": 95, "discountLabel": "-20%", "imagePath": "/promo_wendys_4.jpg" },
+        { "id": 6105, "name": "Spicy Nuggets Combo", "description": "Spicy nuggets, fries, and a drink.", "oldPrice": 199, "newPrice": 165, "discountLabel": "-17%", "imagePath": "/promo_wendys_5.jpg" },
+        { "id": 6106, "name": "Bacon Fries Bundle", "description": "Bacon cheese fries and a drink.", "oldPrice": 139, "newPrice": 115, "discountLabel": "-17%", "imagePath": "/promo_wendys_6.jpg" },
+        { "id": 6107, "name": "Double Baconator Set", "description": "Two Baconators and two drinks.", "oldPrice": 519, "newPrice": 429, "discountLabel": "-17%", "imagePath": "/promo_wendys_7.jpg" },
+        { "id": 6108, "name": "Cheesecake + Coffee", "description": "Cheesecake and a cappuccino.", "oldPrice": 129, "newPrice": 105, "discountLabel": "-19%", "imagePath": "/promo_wendys_8.jpg" }
+      ]
+    }
+  ]
+}

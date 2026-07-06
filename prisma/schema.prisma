@@ -1,0 +1,236 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ─── ENUMS ──────────────────────────────────────────────────────────────
+enum Role {
+  CUSTOMER
+  RESTAURANT_OWNER
+  ADMIN
+}
+
+enum CouponType {
+  FIXED
+  PERCENT
+  FREE_DELIVERY
+}
+
+enum OrderStatus {
+  CONFIRMED
+  PREPARING
+  READY
+  ON_THE_WAY
+  DELIVERED
+  CANCELLED
+}
+
+// ─── КАТЕГОРІЇ / ТОВАРИ ─────────────────────────────────────────────────
+model Category {
+  id            Int           @id @default(autoincrement())
+  name          String        @unique
+  slug          String        @unique
+  imagePath     String
+  products      Product[]
+  subcategories Subcategory[]
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+model Subcategory {
+  id             Int      @id @default(autoincrement())
+  name           String
+  slug           String
+  categoryId     Int
+  globalCategory Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+}
+
+model Product {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String
+  price       Int
+  imagePath   String
+  spiciness   Int      @default(0)
+  categoryId  Int
+  category    Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  reviews     Review[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ─── РЕСТОРАНИ ТА МЕНЮ ──────────────────────────────────────────────────
+model Restaurant {
+  id                  Int                  @id @default(autoincrement())
+  name                String
+  logoPath            String
+  bannerImagePath     String
+  rating              Float                @default(0.0)
+  deliveryTimeMinutes String
+  minimumOrder        Int
+  menuItems           RestaurantMenuItem[]
+  orders              Order[]
+  reviews             Review[]
+  createdAt           DateTime             @default(now())
+  updatedAt           DateTime             @updatedAt
+}
+
+model RestaurantMenuCategory {
+  id    String               @id
+  name  String
+  slug  String
+  items RestaurantMenuItem[]
+}
+
+model RestaurantMenuItem {
+  id             Int                    @id @default(autoincrement())
+  name           String
+  description    String
+  price          Int
+  imagePath      String
+  spiciness      Int                    @default(0)
+  isPromo        Boolean                @default(false)
+  oldPrice       Int?
+  discountLabel  String?
+  restaurantId   Int
+  restaurant     Restaurant             @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+  menuCategoryId String
+  menuCategory   RestaurantMenuCategory @relation(fields: [menuCategoryId], references: [id], onDelete: Cascade)
+  orderItems     OrderItem[]
+  createdAt      DateTime               @default(now())
+  updatedAt      DateTime               @updatedAt
+}
+
+// ─── ПРОМО-АКЦІЇ ────────────────────────────────────────────────────────
+model PromoCategory {
+  id     Int            @id @default(autoincrement())
+  name   String
+  slug   String
+  promos SpecialPromo[]
+}
+
+model SpecialPromo {
+  id              Int           @id @default(autoincrement())
+  name            String
+  description     String
+  price           Int
+  discountPercent String
+  imagePath       String
+  promoCategoryId Int
+  category        PromoCategory @relation(fields: [promoCategoryId], references: [id], onDelete: Cascade)
+}
+
+// ─── КОРИСТУВАЧІ ────────────────────────────────────────────────────────
+model User {
+  id             String    @id @default(cuid())
+  email          String    @unique
+  name           String?
+  role           Role      @default(CUSTOMER)
+  hashedPassword String
+  addresses      Address[]
+  orders         Order[]
+  reviews        Review[]
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+model Address {
+  id        Int      @id @default(autoincrement())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  label     String
+  line1     String
+  line2     String?
+  city      String
+  postcode  String
+  isDefault Boolean  @default(false)
+  orders    Order[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ─── ЗАМОВЛЕННЯ ─────────────────────────────────────────────────────────
+model Order {
+  id           Int         @id @default(autoincrement())
+  userId       String
+  user         User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  restaurantId Int
+  restaurant   Restaurant  @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+  addressId    Int?
+  address      Address?    @relation(fields: [addressId], references: [id])
+  status       OrderStatus @default(CONFIRMED)
+  notes        String?
+  couponCode   String?
+  subtotal     Int
+  deliveryFee  Int         @default(0)
+  discount     Int         @default(0)
+  total        Int
+  couponId     Int?
+  coupon       Coupon?     @relation(fields: [couponId], references: [id])
+  items        OrderItem[]
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+}
+
+model OrderItem {
+  id         Int                @id @default(autoincrement())
+  orderId    Int
+  order      Order              @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  menuItemId Int
+  menuItem   RestaurantMenuItem @relation(fields: [menuItemId], references: [id])
+  name       String
+  price      Int
+  quantity   Int                @default(1)
+}
+
+// ─── КУПОНИ ─────────────────────────────────────────────────────────────
+model Coupon {
+  id             Int        @id @default(autoincrement())
+  code           String     @unique
+  type           CouponType
+  value          Int
+  minOrderAmount Int        @default(0)
+  maxUses        Int?
+  usedCount      Int        @default(0)
+  isActive       Boolean    @default(true)   
+  expiresAt      DateTime?                   
+  orders         Order[]
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+}
+
+// ─── ВІДГУКИ ────────────────────────────────────────────────────────────
+model Review {
+  id           Int         @id @default(autoincrement())
+  userId       String
+  user         User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  restaurantId Int?
+  restaurant   Restaurant? @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
+  productId    Int?
+  product      Product?    @relation(fields: [productId], references: [id], onDelete: Cascade)
+  rating       Int
+  comment      String?
+  createdAt    DateTime    @default(now())
+}
+
+// ─── ПІДПИСНИКИ / ПАРТНЕРИ ──────────────────────────────────────────────
+model EmailSubscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
+
+model PartnerApplication {
+  id             Int      @id @default(autoincrement())
+  restaurantName String
+  contactName    String
+  email          String
+  phone          String?
+  message        String?
+  createdAt      DateTime @default(now())
+}

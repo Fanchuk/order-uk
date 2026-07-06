@@ -1,7 +1,23 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**.neon.tech',
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+            },
+        ],
+    },
+    async rewrites() {
+        return []
+    },
+    // ✅ Винесли з experimental назовні
+    serverExternalPackages: ['@prisma/client'],
+}
 
-export default nextConfig;
+export default nextConfig
